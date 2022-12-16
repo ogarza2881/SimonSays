@@ -4,7 +4,7 @@ let userClickedPattern = [];
 let level = 0;
 let started = false;
 
-document.querySelector('h1').addEventListener('click', function () {
+document.addEventListener('keypress', function () {
   if (!started) {
     document.querySelector('h1').innerHTML = `Level ${level}`;
     nextSequence();
